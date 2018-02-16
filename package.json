@@ -1,0 +1,28 @@
+{
+  "name": "mentalstack",
+  "version": "1.0.0",
+  "description": "Simple tool to help manage your mental stack",
+  "main": "index.js",
+  "bin": {
+    "mentalstack": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawrgrr/mentalstack.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Roger Tu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rawrgrr/mentalstack/issues"
+  },
+  "homepage": "https://github.com/rawrgrr/mentalstack#readme",
+  "dependencies": {
+    "argparse": "^1.0.10"
+  }
+}
