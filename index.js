@@ -78,6 +78,7 @@ function init() {
         'command',
         {
             choices: commandList,
+            nargs: '?',
         }
     );
     parser.addArgument(
@@ -90,9 +91,8 @@ function init() {
 
     let args = parser.parseArgs();
 
-    if (args.length < 0) {
-        parser.printUsage();
-        process.exit();
+    if (args.command == null) {
+        args.command = 'show'
     }
 
     // TODO Check and create subdirectory in home if necessary
